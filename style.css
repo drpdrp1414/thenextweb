@@ -3,3 +3,77 @@
     padding: 0;
     font-family: 'rajdhaniregular', Arial, Helvetica, sans-serif;
 }
+#utility-links{
+    color: white;
+    background-color: #131313;
+    width: 100%;
+    max-height: 32px;
+    line-height: 32px;
+}
+
+nav{
+    width: 100%;
+    height: 48px;
+    background-color: rgb(255, 249, 249);
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.nav-links > *{
+    margin: 0px 8px 0px 8px;
+}
+
+.nav-links li{
+    font-size: 18px;
+
+}
+
+.nav-links li a{
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: black;
+}
+
+.items-left li a:hover{
+    color: white;
+}
+
+.items-left{
+    display: inline-flex;
+    width: 100%;
+}
+.items-left > *{
+    margin: 0px 5px 0px 12px;
+}
+
+.items-left li a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+.end{
+    margin-left: auto;
+}
+
+.connect{
+    text-decoration: none;
+    color: black;
+    padding: 0px 0px 0px 10px;
+    font-size: 13px;
+    line-height: 30px;
+    display: block;
+    width: 100%;
+    background-color: #fd3;
+}
