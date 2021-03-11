@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'rajdhaniregular', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 #utility-links{
     color: white;
@@ -77,3 +79,56 @@ ul{
     width: 100%;
     background-color: #fd3;
 }
+
+.main{
+    background-color: goldenrod;
+    grid-area: main;  
+}
+
+.secondary{
+    background: grey;
+    grid-area: secondary;
+}
+
+.third{
+    background-color: purple;
+    grid-area: third;
+}
+
+.cover{
+    margin: 2px 5px 0px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 75vh;
+    max-height: 560px;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: 
+    "main main secondary"
+    "main main third";
+}
+
+
+@media (max-width: 700px){
+    .cover{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "main"
+        "secondary"
+        "third";
+    }
+    
+    #utility-links{
+        display: none;
+    }
+
+    .connect{
+        text-align: center;
+        line-height: 60px;
+        font-size: 15px;
+    }
+
+}
+
