@@ -109,17 +109,31 @@ ul{
     "main main third";
 }
 
+h3 a{
+    color: #f42;
+    font-family: rajdhanibold;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.latest-news{
+    max-width: 1192px;
+    margin: 20px auto;
+    padding: 20px 20px;
+}
 
 @media (max-width: 700px){
     .cover{
+        height: 100vh;
+        max-height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 33vh);
         grid-template-areas: 
         "main"
         "secondary"
         "third";
     }
-    
+
     #utility-links{
         display: none;
     }
