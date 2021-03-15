@@ -166,6 +166,24 @@ h3 a{
     text-decoration-color: rgba(255, 149, 131, 0.699);
 }
 
+.story-byline{
+    color: #aaa;
+}
+
+.story-byline li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.story-byline > *:first-child::after{
+    content: "·";
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.story-byline li a:hover{
+    color: rgb(31, 31, 31);
+}
 
 @media (max-width: 1024px){
     .news-flex > *{
