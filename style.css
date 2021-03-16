@@ -86,18 +86,42 @@ ul li{
     background-color: #fd3;
 }
 
+.cover-image{
+    background-position: 50%;
+    background-size: cover;
+}
+
+.cover-gradient{
+    background: transparent url(img/gradient.webp) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    mix-blend-mode: lighten;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 4;
+}
+
 .main{
-    background-color: goldenrod;
+    position: relative;
+    background-color: grey;
+    background-image: url(img/cover1.jpg);
     grid-area: main;  
 }
 
 .secondary{
+    position: relative;
     background: grey;
+    background-image: url(img/cover2.webp);
     grid-area: secondary;
 }
 
 .third{
-    background-color: purple;
+    position: relative;
+    background-color: grey;
+    background-image: url(img/cover3.webp);
     grid-area: third;
 }
 
@@ -113,6 +137,10 @@ ul li{
     grid-template-areas: 
     "main main secondary"
     "main main third";
+}
+
+.cover-header{
+    
 }
 
 h3 a{
@@ -188,6 +216,9 @@ h3 a{
 @media (max-width: 1024px){
     .news-flex > *{
         flex:0 1 31%;
+    }
+    .cover-gradient{
+        background-image: none;
     }
 }
 
