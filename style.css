@@ -91,6 +91,20 @@ ul li{
     background-size: cover;
 }
 
+.cover-trigger{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transition: background-color .4s ease;
+    background: rgba(0,0,0,.25) url(./img/cover-trigger.webp) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    will-change: background-color;
+
+}
+
 .cover-gradient{
     background: transparent url(img/gradient.webp) no-repeat;
     background-position: 0 0;
@@ -139,8 +153,30 @@ ul li{
     "main main third";
 }
 
+.bold{
+    font-weight: 700;
+    font-family:'rajdhanibold', Arial, Helvetica, sans-serif;;
+}
+
+.cover a{
+    cursor: pointer;
+    z-index: 6;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main h2{
+    font-family: 'rajdhanibold'; 
+    font-size: 56px;
+    line-height: 1;
+}
+
 .cover-header{
-    
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    padding: 20px;
 }
 
 h3 a{
