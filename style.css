@@ -154,6 +154,7 @@ ul li{
     background: grey;
     background-image: url(img/cover2.webp);
     grid-area: secondary;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -333,7 +334,7 @@ h3 a:hover{
 .second{
     background-image: url(img/article-small-2.jpg);
 }
-.third{
+.third-news{
     background-image: url(img/article-small-3.webp);
 }
 .fourth{
@@ -416,7 +417,21 @@ h3 a:hover{
 
     .news-item{
         display: grid;
+        grid-template-columns: 75px 1fr;
+        grid-row: 75px;
+        grid-template-areas: "recent-img recent-title";
     }
+    .news-items .recent-img{
+        grid-area: recent-img;
+    }
+    .news-item h4{
+        grid-area: recent-title;
+    }
+
+    .news-item .story-byline{
+        grid-area: recent-byline;
+    }
+    
 
     .cover{
         height: 100vh;
