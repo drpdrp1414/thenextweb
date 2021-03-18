@@ -285,10 +285,7 @@ ul li{
 }
 
 
-.latest-news h3{
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
+
 
 h3 a{
     color: #f42;
@@ -305,6 +302,11 @@ h3 a:hover{
     max-width: 1192px;
     margin: 20px auto;
     padding: 20px 20px;
+}
+
+.latest-news h3{
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 .news-flex{
@@ -387,6 +389,13 @@ h3 a:hover{
     color: rgb(31, 31, 31);
 }
 
+.funding-rounds{
+    max-width: 1192px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
 @media (max-width: 1024px){
     .news-flex > *{
         flex:0 1 31%;
@@ -420,6 +429,7 @@ h3 a:hover{
         grid-template-columns: 75px 1fr;
         grid-row: 75px;
         grid-template-areas: "recent-img recent-title";
+        grid-column-gap: 10px;
     }
     .news-items .recent-img{
         grid-area: recent-img;
@@ -431,7 +441,9 @@ h3 a:hover{
     .news-item .story-byline{
         grid-area: recent-byline;
     }
-    
+    .news-item-text h4{
+        padding-bottom: 5px;
+    }
 
     .cover{
         height: 100vh;
