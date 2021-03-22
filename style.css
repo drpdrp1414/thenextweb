@@ -394,6 +394,46 @@ h3 a:hover{
     margin: 0 auto;
     padding: 20px;
 }
+.funding-flex{
+    display: flex;
+}
+.funding-item{
+    position: relative;
+    width: 25%;
+    min-height: 60px;
+    padding: 0px 15px;
+}
+.funding-item img{
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    margin: 10px 25px 10px 25px;
+    position: absolute;
+}
+.funding-item h4{
+    padding:10px 16px 10px 84px;
+    vertical-align: middle;
+}
+
+.funding-item a{
+    text-decoration: none;
+    color: white;
+}
+.company{
+    width: 100%;
+    background-color: #f42;
+    font-size: 20px;
+}
+.funding-sub{
+    color: black;
+    width: 100%;
+    background: rgba(255,68,34,.08);
+}
+
+.funding-sub > *{
+    padding: 0px 0px 0px 84px;
+}
 
 
 @media (max-width: 1024px){
