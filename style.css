@@ -252,6 +252,12 @@ ul li{
 .icon-share{
     background-position: -912px -912px;
 }
+.icon-tag{
+    background-position: -976px -976px;
+}
+.icon-briefcase{
+    background-position: -48px -48px;
+}
 
 .search{
     margin-left: auto;
@@ -411,10 +417,7 @@ h3 a:hover{
     margin: 10px 25px 10px 25px;
     position: absolute;
 }
-.funding-item h4{
-    padding:10px 16px 10px 84px;
-    vertical-align: middle;
-}
+
 
 .funding-item a{
     text-decoration: none;
@@ -435,6 +438,67 @@ h3 a:hover{
     padding: 0px 0px 0px 84px;
 }
 
+.funding-item h4{
+    display: inline-block;
+    padding:10px 16px 10px 84px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.funding-rounds h3{
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.funding-item h5{
+    opacity: .5;
+    padding-bottom: 15px;
+}
+
+.funding-sub h4{
+    padding: 10px 16px 0 84px;
+}
+.funding-card{
+    width: 100%;
+    background: rgba(255,68,34,.03);
+}
+.funding-card a{
+    color: #555;
+}
+.funding-card a:hover{
+    color: black;
+}
+.funding-card-bit{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.funding-card-bit i{
+    margin-right: 8px;
+}
+.funding-byline{
+    border-top: 1px solid rgba(255,68,34,.25);
+    background: rgba(255,68,34,.03);
+    padding: 10px 16px 16px 16px;
+}
+
+.funding-byline a{
+    padding: 5px;
+    font-size: 12px;
+    width: 100%;
+    color: rgb(43, 43, 43);
+}
+
+.funding-byline a span{
+    color: rgb(141, 141, 141);
+}
+.sticky-container{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 
 @media (max-width: 1024px){
     .news-flex > *{
@@ -448,6 +512,14 @@ h3 a:hover{
     }
     .cover-date{
         display: none;
+    }
+
+    .funding-flex{
+        flex-wrap: wrap;
+    }
+    .funding-item{
+        width: 50%;
+        padding-bottom: 20px;
     }
 }
 
@@ -504,6 +576,10 @@ h3 a:hover{
         text-align: center;
         line-height: 60px;
         font-size: 15px;
+    }
+    .funding-item{
+        width: 100%;
+        padding-bottom: 20px;
     }
 
 }
