@@ -500,6 +500,137 @@ h3 a:hover{
     z-index: 999;
 }
 
+.category-news{
+    max-width: 1192px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.category-news > *{
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+    padding: 25px;
+}
+
+.category-news h2 a{
+    text-decoration: none;
+    color: #f42;
+}
+.category-news h2 a:hover{
+    color: black;
+}
+
+.category-news li ul{
+    width: 100%;
+}
+.category-opacity{
+    background: transparent url(./img/cover-trigger.webp) no-repeat;
+    background-size: auto;
+    background-size: 100% 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.category-img{
+    background-color: #000;
+    background-size: cover;
+    background-position: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.category-item .popular{
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+}
+.section-popular-header{
+    color: white;
+    bottom: 0;
+    left: 0;
+    padding: 14px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+.section-popular-header h3 a{
+    color: white;
+    line-height: 22px;
+    font-size: 22px;
+}
+.section-popular-header ul li a{
+    color: hsla(0,0%,100%,.6);
+    text-decoration: none;
+}
+.section-popular-header ul li a::after{
+    content: "·";
+    display: inline-block;
+    margin: 0 4px;
+}
+.section-popular-header ul li{
+    color: hsla(0,0%,100%,.6);
+}
+.category-latest{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(255,68,34,.06);
+    margin: 2px 0;
+}
+.category-latest header{
+    padding: 10px 14px 0;
+}
+.latest-img{
+    height: 96px;
+    width: 96px;
+    background-position: 50%;
+    background-size: cover;
+    flex: 0 0 96px
+}
+
+.category-latest h5{
+    letter-spacing: .5px;
+    color: #f42;
+}
+.category-latest h4 a{
+    color: #f42;
+    text-decoration: none;
+}
+.category-latest h4 a:hover{
+    text-decoration: underline;
+}
+.category-headline{
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.category-headline h4 a{
+    line-height: 14px;
+    font-size: 14px;
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+}
+.category-headline h4 a:hover{
+    color: black;
+}
+.category-headline h4 a::before{
+    content:  "\2022";
+    color: #f42;
+    display: inline-block;
+    font-size: 36px;
+    width: 12px;
+    vertical-align: middle;
+}
+
 @media (max-width: 1024px){
     .news-flex > *{
         flex:0 1 31%;
@@ -581,6 +712,5 @@ h3 a:hover{
         width: 100%;
         padding-bottom: 20px;
     }
-
 }
 
