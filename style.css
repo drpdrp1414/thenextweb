@@ -652,6 +652,11 @@ h3 a:hover{
         width: 50%;
         padding-bottom: 20px;
     }
+    .category-news > *{
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 25px;
+    }
 }
 
 
@@ -711,6 +716,11 @@ h3 a:hover{
     .funding-item{
         width: 100%;
         padding-bottom: 20px;
+    }
+    .category-news > *{
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 25px;
     }
 }
 
